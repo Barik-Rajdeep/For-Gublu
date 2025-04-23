@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            background: linear-gradient(45deg, #ff69b4, #ff1493);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,27 +18,28 @@
         }
         .container {
             text-align: center;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.95);
             padding: 2rem;
             border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            box-shadow: 0 0 30px rgba(255,20,147,0.3);
             max-width: 600px;
             transform-style: preserve-3d;
             transition: transform 0.5s;
         }
         .container:hover {
             transform: translateY(-10px) rotateX(5deg);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 30px rgba(255,20,147,0.4);
         }
         h1 {
-            color: #ff4b6e;
+            color: #ff1493;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
             animation: colorChange 3s infinite;
+            font-size: 2.5em;
         }
         .heart {
             color: red;
-            font-size: 100px;
+            font-size: 120px;
             animation: heartbeat 1s infinite;
             cursor: pointer;
             user-select: none;
@@ -48,68 +49,69 @@
         }
         .message {
             margin: 20px 0;
-            font-size: 18px;
-            color: #555;
-            line-height: 1.6;
+            font-size: 20px;
+            color: #333;
+            line-height: 1.8;
             transition: all 0.3s;
-            padding: 10px;
+            padding: 15px;
             border-radius: 10px;
+            font-style: italic;
         }
         .message:hover {
-            background: rgba(255,75,110,0.1);
-            transform: scale(1.02);
+            background: rgba(255,20,147,0.15);
+            transform: scale(1.03);
         }
         .button {
-            background: linear-gradient(45deg, #ff4b6e, #ff758c);
+            background: linear-gradient(45deg, #ff1493, #ff69b4);
             color: white;
             border: none;
-            padding: 15px 30px;
-            border-radius: 25px;
+            padding: 18px 35px;
+            border-radius: 30px;
             cursor: pointer;
-            font-size: 16px;
-            margin: 10px;
+            font-size: 18px;
+            margin: 15px;
             transition: all 0.3s;
-            box-shadow: 0 5px 15px rgba(255,75,110,0.3);
+            box-shadow: 0 5px 15px rgba(255,20,147,0.4);
         }
         .button:hover {
-            transform: scale(1.1) translateY(-5px);
-            box-shadow: 0 10px 20px rgba(255,75,110,0.4);
+            transform: scale(1.15) translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255,20,147,0.5);
         }
         @keyframes heartbeat {
             0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
+            50% { transform: scale(1.3); }
             100% { transform: scale(1); }
         }
         @keyframes heartJump {
             0% { transform: translateY(0) scale(1); }
-            50% { transform: translateY(-20px) scale(1.3); }
+            50% { transform: translateY(-25px) scale(1.4); }
             100% { transform: translateY(0) scale(1); }
         }
         @keyframes float {
             0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+            100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
         }
         @keyframes colorChange {
-            0% { color: #ff4b6e; }
-            50% { color: #ff758c; }
-            100% { color: #ff4b6e; }
+            0% { color: #ff1493; }
+            50% { color: #ff69b4; }
+            100% { color: #ff1493; }
         }
         @keyframes backgroundPulse {
-            0% { background: linear-gradient(45deg, #ff9a9e, #fad0c4); }
-            50% { background: linear-gradient(45deg, #fad0c4, #ff9a9e); }
-            100% { background: linear-gradient(45deg, #ff9a9e, #fad0c4); }
+            0% { background: linear-gradient(45deg, #ff69b4, #ff1493); }
+            50% { background: linear-gradient(45deg, #ff1493, #ff69b4); }
+            100% { background: linear-gradient(45deg, #ff69b4, #ff1493); }
         }
         .floating-hearts {
             position: absolute;
-            font-size: 20px;
+            font-size: 25px;
             animation: float 4s linear infinite;
             pointer-events: none;
         }
         .sparkle {
             position: absolute;
             background: white;
-            width: 5px;
-            height: 5px;
+            width: 6px;
+            height: 6px;
             border-radius: 50%;
             pointer-events: none;
         }
@@ -117,30 +119,31 @@
 </head>
 <body>
     <div class="container">
-        <h1>Dear Shreyoshi</h1>
+        <h1>My Beloved Shreyoshi</h1>
         <div class="heart" onclick="heartClick()">❤️</div>
         <div class="message">
-            I'm really sorry for making you angry. You mean the world to me, and seeing you upset breaks my heart. 
-            Your smile brightens up my day, and I promise to do better.
+            My darling, my heart aches when you're upset. You're the most precious person in my life, 
+            and your smile is what I live for. Let me make it up to you in every way possible.
         </div>
         <div class="message">
-            Please forgive me, because...
-            <br>You're the most amazing person I've ever met
-            <br>Your happiness means everything to me
-            <br>I can't imagine my life without you
+            I need you because...
+            <br>You're the queen of my heart and dreams
+            <br>Every moment with you is pure magic
+            <br>My love for you grows stronger each day
+            <br>You're my everything, my passion, my desire
         </div>
-        <button class="button" onclick="showLove()">Click for a surprise ❤️</button>
+        <button class="button" onclick="showLove()">Touch Me For Love ❤️</button>
     </div>
 
     <script>
         function showLove() {
-            for(let i = 0; i < 30; i++) {
-                setTimeout(() => createHeart(), i * 100);
+            for(let i = 0; i < 50; i++) {
+                setTimeout(() => createHeart(), i * 80);
             }
             createSparkles();
-            document.querySelector('.message').innerHTML += "<br>I Love You So Much! ❤️";
-            document.querySelector('.container').style.transform = 'scale(1.1)';
-            setTimeout(() => document.querySelector('.container').style.transform = 'scale(1)', 500);
+            document.querySelector('.message').innerHTML += "<br>I Desire You Forever! ❤️";
+            document.querySelector('.container').style.transform = 'scale(1.15)';
+            setTimeout(() => document.querySelector('.container').style.transform = 'scale(1)', 600);
         }
 
         function heartClick() {
@@ -157,13 +160,13 @@
             heart.className = 'floating-hearts';
             heart.style.left = Math.random() * 100 + 'vw';
             heart.style.animationDuration = Math.random() * 3 + 2 + 's';
-            heart.style.fontSize = Math.random() * 30 + 20 + 'px';
+            heart.style.fontSize = Math.random() * 35 + 25 + 'px';
             document.body.appendChild(heart);
             setTimeout(() => heart.remove(), 5000);
         }
 
         function createSparkles() {
-            for(let i = 0; i < 20; i++) {
+            for(let i = 0; i < 30; i++) {
                 const sparkle = document.createElement('div');
                 sparkle.className = 'sparkle';
                 sparkle.style.left = Math.random() * 100 + 'vw';
@@ -174,15 +177,15 @@
             }
         }
 
-        setInterval(() => createHeart(), 3000);
+        setInterval(() => createHeart(), 2000);
         document.addEventListener('mousemove', (e) => {
-            if(Math.random() > 0.9) {
+            if(Math.random() > 0.85) {
                 const heart = document.createElement('div');
                 heart.innerHTML = '❤️';
                 heart.className = 'floating-hearts';
                 heart.style.left = e.clientX + 'px';
                 heart.style.top = e.clientY + 'px';
-                heart.style.fontSize = '15px';
+                heart.style.fontSize = '20px';
                 document.body.appendChild(heart);
                 setTimeout(() => heart.remove(), 2000);
             }
